@@ -1,0 +1,120 @@
+:root{
+    --verde: #06aa48;
+    --branco: #ffffff;
+    --cinza: #aaa;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header .container{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--verde);
+    }
+/*elementos base */
+body{
+    background: var(--cinza);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+.logo{
+    color: var(--branco);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+    padding-left: 15px;
+    padding-right: 30px;
+    text-shadow: black;
+}
+
+.logo hover{
+    text-decoration: none;
+    color:var(--branco);
+    margin-right: 10px;
+}
+
+header nav a{
+    text-decoration: none;
+    color:var(--branco);
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: var(--cinza);
+}
+
+/* evento principal */
+
+.main-event{
+    font-size: 17px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/Netflix/img/capa-chelsea.jpg');
+    height: 400px; /* defininindo tamanho da img */
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 15px;
+    }
+
+.titulo{
+    margin-top: 5%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 90px;
+}
+
+.botao{
+    background-color: #06aa4891;
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    }
+
+.botao:hover{
+    background-color: var(--cinza);
+    color:var(--verde);
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.box-filme{
+    height: 100px;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+   }
+
+#teste{position:relative}
+#teste:hover{
+    top: -3px;
+    right: 3px;
+    box-shadow:0 4px 4px #999;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    transition: .3s ease all;
+    
+}
+
+.item img{
+    height: 280px;
+    width: 200px;
+}
